@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Load the dataset
-file_path = 'python-challenge/PyPoll/resources.pypoll/election_data.csv'
+file_path = 'PyPoll/resources.pypoll/election_data.csv'
 data = pd.read_csv(file_path)
 
 # Calculate the total number of votes
@@ -30,7 +30,7 @@ print(f"Winner: {winner}")
 print("-------------------------")
 
 # Ensure the output directory exists
-output_dir = 'pypoll_analysis'
+output_dir = 'PyPoll/pypoll_analysis'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
